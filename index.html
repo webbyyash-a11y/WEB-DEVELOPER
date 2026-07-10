@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WebbyYash | Professional Web Development</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+border-bottom:2px solid orange;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:orange;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+padding-top:130px;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+color:orange;
+}
+
+.hero p{
+margin:20px auto;
+max-width:700px;
+font-size:20px;
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:orange;
+color:black;
+font-weight:bold;
+border-radius:40px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+font-size:40px;
+text-align:center;
+color:orange;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#181818;
+padding:30px;
+border-radius:15px;
+border:2px solid orange;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px orange;
+}
+
+.card h3{
+margin-bottom:15px;
+color:orange;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+border:3px solid orange;
+}
+
+.contact{
+text-align:center;
+background:#111;
+border-radius:20px;
+padding:40px;
+border:2px solid orange;
+}
+
+.contact h2{
+color:orange;
+margin-bottom:25px;
+}
+
+.contact p{
+font-size:20px;
+margin:15px;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:25px;
+color:#aaa;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">WebbyYash</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Professional Web Development</h1>
+
+<p>
+Modern, Responsive & Premium Websites for Businesses, Startups,
+Schools, Restaurants, Gyms, Hospitals and Personal Portfolios.
+</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About WebbyYash</h2>
+
+<div class="about">
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+<div>
+
+<h2 style="color:orange;margin-bottom:20px;">Who We Are</h2>
+
+<p style="line-height:1.8;font-size:18px;">
+
+WebbyYash is a modern web development service focused on creating
+professional, responsive, SEO-friendly and high-performance websites.
+
+We build websites for businesses, portfolios, eCommerce stores,
+schools, hospitals, restaurants, gyms and startups.
+
+Our mission is to deliver premium quality websites with attractive
+designs, fast loading speed and mobile responsiveness.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Business Website</h3>
+
+<p>Professional websites for companies and startups.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>Creative portfolios for students, freelancers and developers.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Landing Page</h3>
+
+<p>High converting landing pages for your business.</p>
+
+</div>
+
+<div class="card">
+
+<h3>E-Commerce Website</h3>
+
+<p>Online shopping websites with premium design.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Responsive Design</h3>
+
+<p>Looks perfect on Mobile, Tablet & Desktop.</p>
+
+</div>
+
+<div class="card">
+
+<h3>SEO Optimization</h3>
+
+<p>Google friendly website structure for better ranking.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact WebbyYash</h2>
+
+<p><strong>Phone :</strong> 7428921765</p>
+
+<p><strong>Email :</strong> webbyash@gamil.com</p>
+
+<p><strong>Available for Freelance Projects</strong></p>
+
+<a href="tel:7428921765" class="btn">Call Now</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 WebbyYash | Professional Web Development
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pricing | WebbyYash</title>
+
+<meta name="description" content="Affordable Website Development Packages by WebbyYash">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(12px);
+border-bottom:2px solid orange;
+z-index:999;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:orange;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+height:55vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+margin-top:70px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85));
+}
+
+.hero h1{
+font-size:60px;
+color:orange;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+line-height:1.8;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+color:orange;
+margin-bottom:60px;
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+}
+
+.plan{
+background:#151515;
+border:2px solid orange;
+border-radius:20px;
+padding:40px;
+transition:.4s;
+text-align:center;
+}
+
+.plan:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px orange;
+}
+
+.plan h2{
+color:orange;
+margin-bottom:20px;
+}
+
+.price{
+font-size:55px;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+.plan ul{
+list-style:none;
+margin-bottom:30px;
+}
+
+.plan ul li{
+padding:12px 0;
+border-bottom:1px solid #333;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:orange;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+.popular{
+transform:scale(1.05);
+border:3px solid gold;
+}
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.popular{
+transform:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">WebbyYash</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Pricing Plans</h1>
+
+<p>
+
+Choose the perfect website package for your business and grow online with WebbyYash.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">
+
+Website Packages
+
+</h1>
+
+<div class="pricing">
+
+<div class="plan">
+
+<h2>Starter</h2>
+
+<div class="price">₹4,999</div>
+
+<ul>
+
+<li>✔ 5 Pages Website</li>
+
+<li>✔ Mobile Responsive</li>
+
+<li>✔ Contact Form</li>
+
+<li>✔ Basic SEO</li>
+
+<li>✔ 1 Month Support</li>
+
+</ul>
+
+<a href="contact.html" class="btn">
+
+Choose Plan
+
+</a>
+
+</div>
+
+<div class="plan popular">
+
+<h2>Business</h2>
+
+<div class="price">₹9,999</div>
+
+<ul>
+
+<li>✔ 10 Pages Website</li>
+
+<li>✔ Premium Design</li>
+
+<li>✔ WhatsApp Chat</li>
+
+<li>✔ Advanced SEO</li>
+
+<li>✔ Speed Optimization</li>
+
+<li>✔ 3 Months Support</li>
+
+</ul>
+
+<a href="contact.html" class="btn">
+
+Choose Plan
+
+</a>
+
+</div>
+
+<div class="plan">
+
+<h2>Enterprise</h2>
+
+<div class="price">₹19,999</div>
+
+<ul>
+
+<li>✔ Unlimited Pages</li>
+
+<li>✔ Custom Design</li>
+
+<li>✔ Admin Panel</li>
+
+<li>✔ Premium SEO</li>
+
+<li>✔ Priority Support</li>
+
+</ul>
+
+<a href="contact.html" class="btn">
+
+Choose Plan
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h1 class="title">Feature Comparison</h1>
+
+<div style="overflow-x:auto;">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:orange;color:black;">
+
+<th style="padding:18px;">Features</th>
+<th>Starter</th>
+<th>Business</th>
+<th>Enterprise</th>
+
+</tr>
+
+<tr>
+<td style="padding:15px;">Pages</td>
+<td>5</td>
+<td>10</td>
+<td>Unlimited</td>
+</tr>
+
+<tr>
+<td style="padding:15px;">Responsive Design</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+
+<tr>
+<td style="padding:15px;">SEO Optimization</td>
+<td>Basic</td>
+<td>Advanced</td>
+<td>Premium</td>
+</tr>
+
+<tr>
+<td style="padding:15px;">WhatsApp Integration</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+
+<tr>
+<td style="padding:15px;">Contact Form</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+
+<tr>
+<td style="padding:15px;">Admin Panel</td>
+<td>❌</td>
+<td>Optional</td>
+<td>✔</td>
+</tr>
+
+<tr>
+<td style="padding:15px;">Support</td>
+<td>1 Month</td>
+<td>3 Months</td>
+<td>12 Months</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Website Add-ons</h1>
+
+<div class="pricing">
+
+<div class="plan">
+
+<h2>Google SEO Setup</h2>
+
+<div class="price">₹999</div>
+
+<p>
+Google Search Console, Sitemap, Robots.txt and basic on-page SEO.
+</p>
+
+</div>
+
+<div class="plan">
+
+<h2>Domain + Hosting</h2>
+
+<div class="price">₹2,499</div>
+
+<p>
+Complete hosting setup with SSL certificate and domain connection.
+</p>
+
+</div>
+
+<div class="plan">
+
+<h2>Website Maintenance</h2>
+
+<div class="price">₹1,999/Month</div>
+
+<p>
+Regular updates, security monitoring, backups and technical support.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Why Choose Our Plans?</h1>
+
+<div class="pricing">
+
+<div class="plan">
+
+<h2>⚡ Fast Delivery</h2>
+
+<p>
+Most websites are delivered within 3–7 working days without compromising quality.
+</p>
+
+</div>
+
+<div class="plan">
+
+<h2>🎨 Premium Design</h2>
+
+<p>
+Modern UI with glassmorphism, responsive layouts and smooth animations.
+</p>
+
+</div>
+
+<div class="plan">
+
+<h2>📈 Business Growth</h2>
+
+<p>
+SEO-ready websites designed to help your business attract more customers.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+table{
+background:#151515;
+border:2px solid orange;
+border-radius:12px;
+overflow:hidden;
+}
+
+table th,
+table td{
+border:1px solid #333;
+padding:15px;
+}
+
+table tr:hover{
+background:#1e1e1e;
+}
+
+</style>
+<section>
+
+<h1 class="title">Frequently Asked Questions</h1>
+
+<div class="pricing">
+
+<div class="plan">
+
+<h2>How long does it take?</h2>
+
+<p>
+A standard business website is usually completed within 3–7 working days depending on the project scope.
+</p>
+
+</div>
+
+<div class="plan">
+
+<h2>Do I need to buy hosting?</h2>
+
+<p>
+Yes. We can help you purchase a domain, set up hosting and configure SSL for a secure website.
+</p>
+
+</div>
+
+<div class="plan">
+
+<h2>Can I upgrade my plan later?</h2>
+
+<p>
+Absolutely! You can upgrade from Starter to Business or Enterprise anytime.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="plan" style="max-width:900px;margin:auto;">
+
+<h1 style="color:orange;font-size:45px;">
+Ready To Start?
+</h1>
+
+<p style="font-size:18px;line-height:1.8;margin:25px 0;">
+
+Choose the perfect package and let WebbyYash build a fast, modern and professional website for your business.
+
+</p>
+
+<a href="contact.html" class="btn">
+
+Get Free Quote
+
+</a>
+
+</div>
+
+</section>
+
+<footer style="background:#111;padding:60px 8%;border-top:2px solid orange;">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+
+<div>
+
+<h2 style="color:orange;">WebbyYash</h2>
+
+<p style="margin-top:20px;line-height:1.8;">
+
+Professional Website Development Company delivering premium websites with responsive design, SEO optimization and modern UI.
+
+</p>
+
+</div>
+
+<div>
+
+<h3 style="color:orange;">Quick Links</h3>
+
+<p><a href="index.html" style="color:white;text-decoration:none;">Home</a></p>
+<p><a href="about.html" style="color:white;text-decoration:none;">About</a></p>
+<p><a href="services.html" style="color:white;text-decoration:none;">Services</a></p>
+<p><a href="portfolio.html" style="color:white;text-decoration:none;">Portfolio</a></p>
+<p><a href="pricing.html" style="color:white;text-decoration:none;">Pricing</a></p>
+<p><a href="contact.html" style="color:white;text-decoration:none;">Contact</a></p>
+
+</div>
+
+<div>
+
+<h3 style="color:orange;">Contact Us</h3>
+
+<p>📞 +91 7428921765</p>
+
+<p>📧 webbyyash@gmail.com</p>
+
+<p>📍 Ghaziabad, Uttar Pradesh, India</p>
+
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border-color:#333;">
+
+<p style="text-align:center;">
+© 2026 WebbyYash. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+const plans=document.querySelectorAll(".plan");
+
+function revealPlans(){
+
+plans.forEach(plan=>{
+
+const top=plan.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+plan.style.opacity="1";
+plan.style.transform="translateY(0)";
+
+}
+
+});
+
+}
+
+plans.forEach(plan=>{
+
+plan.style.opacity="0";
+plan.style.transform="translateY(40px)";
+plan.style.transition=".8s";
+
+});
+
+window.addEventListener("scroll",revealPlans);
+
+revealPlans();
+
+</script>
+
+</body>
+</html>

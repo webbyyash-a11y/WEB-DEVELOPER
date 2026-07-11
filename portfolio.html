@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | WebbyYash</title>
+
+<meta name="description" content="Explore WebbyYash Portfolio - Premium Website Projects">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(12px);
+border-bottom:2px solid orange;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:orange;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+height:60vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+margin-top:70px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8));
+}
+
+.hero h1{
+font-size:60px;
+color:orange;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:850px;
+line-height:1.8;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+color:orange;
+margin-bottom:60px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#151515;
+border:2px solid orange;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+}
+
+.project-card:hover{
+transform:translateY(-12px);
+box-shadow:0 0 25px orange;
+}
+
+.project-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+color:orange;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.project-content p{
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:orange;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+transition:.4s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.08);
+}
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">WebbyYash</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Our Portfolio</h1>
+
+<p>
+
+Explore some of our premium web development projects designed for businesses, startups and creators.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Featured Projects</h1>
+
+<div class="projects">
+
+<div class="project-card">
+
+<img src="https://picsum.photos/600/400?random=21">
+
+<div class="project-content">
+
+<h3>Business Website</h3>
+
+<p>Modern corporate website with responsive design and SEO optimization.</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<img src="https://picsum.photos/600/400?random=22">
+
+<div class="project-content">
+
+<h3>E-Commerce Store</h3>
+
+<p>Professional online shopping website with premium UI.</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<img src="https://picsum.photos/600/400?random=23">
+
+<div class="project-content">
+
+<h3>Portfolio Website</h3>
+
+<p>Creative personal portfolio with animations and responsive layout.</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h1 class="title">Project Categories</h1>
+
+<div class="projects">
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>🏢 Business Websites</h3>
+
+<p>
+Professional websites for companies, agencies and startups with premium UI and responsive layouts.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>🛒 E-Commerce Stores</h3>
+
+<p>
+Complete online shopping solutions with product pages, cart and secure checkout integration.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>👨‍💻 Portfolio Websites</h3>
+
+<p>
+Modern personal portfolios for developers, designers and freelancers.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>🍽 Restaurant Websites</h3>
+
+<p>
+Restaurant websites with online menu, reservations and food ordering features.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>🏥 Hospital Websites</h3>
+
+<p>
+Professional healthcare websites with appointment booking systems.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>🎓 Education Websites</h3>
+
+<p>
+School, college and coaching institute websites with admission information.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Technologies Used</h1>
+
+<div class="projects">
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>Frontend</h3>
+
+<p>
+
+✔ HTML5<br>
+✔ CSS3<br>
+✔ JavaScript<br>
+✔ Bootstrap<br>
+✔ React
+
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>Backend</h3>
+
+<p>
+
+✔ Node.js<br>
+✔ PHP<br>
+✔ Express.js<br>
+✔ REST API
+
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>Database</h3>
+
+<p>
+
+✔ MySQL<br>
+✔ MongoDB<br>
+✔ Firebase
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Portfolio Statistics</h1>
+
+<div class="projects">
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h2 style="font-size:55px;color:orange;">250+</h2>
+
+<p>Projects Completed</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h2 style="font-size:55px;color:orange;">180+</h2>
+
+<p>Happy Clients</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h2 style="font-size:55px;color:orange;">99%</h2>
+
+<p>Client Satisfaction</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h2 style="font-size:55px;color:orange;">24/7</h2>
+
+<p>Support Available</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h1 class="title">Client Reviews</h1>
+
+<div class="projects">
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>⭐⭐⭐⭐⭐ Rahul Sharma</h3>
+
+<p>
+WebbyYash delivered an amazing business website with a premium design. Highly recommended!
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>⭐⭐⭐⭐⭐ Priya Singh</h3>
+
+<p>
+Excellent support, fast delivery and a beautiful responsive website.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>⭐⭐⭐⭐⭐ Aman Verma</h3>
+
+<p>
+Professional work with modern UI and SEO-friendly development.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="project-card" style="text-align:center;padding:60px;">
+
+<h1 style="color:orange;font-size:42px;">
+Let's Build Your Next Project
+</h1>
+
+<p style="font-size:18px;line-height:1.8;margin:25px 0;">
+
+Need a modern website for your business?
+Contact WebbyYash today and let's create something amazing.
+
+</p>
+
+<a href="contact.html" class="btn">
+
+Start Your Project
+
+</a>
+
+</div>
+
+</section>
+
+<footer style="background:#111;border-top:2px solid orange;padding:60px 8%;">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+
+<div>
+
+<h2 style="color:orange;">WebbyYash</h2>
+
+<p style="margin-top:20px;line-height:1.8;">
+
+Professional Web Development Agency specializing in premium business websites, e-commerce stores and custom web applications.
+
+</p>
+
+</div>
+
+<div>
+
+<h3 style="color:orange;">Quick Links</h3>
+
+<p><a href="index.html" style="color:white;text-decoration:none;">Home</a></p>
+
+<p><a href="about.html" style="color:white;text-decoration:none;">About</a></p>
+
+<p><a href="services.html" style="color:white;text-decoration:none;">Services</a></p>
+
+<p><a href="portfolio.html" style="color:white;text-decoration:none;">Portfolio</a></p>
+
+<p><a href="contact.html" style="color:white;text-decoration:none;">Contact</a></p>
+
+</div>
+
+<div>
+
+<h3 style="color:orange;">Contact Information</h3>
+
+<p>📞 +91 7428921765</p>
+
+<p>📧 webbyyash@gmail.com</p>
+
+<p>📍 Ghaziabad, Uttar Pradesh, India</p>
+
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border-color:#333;">
+
+<p style="text-align:center;">
+© 2026 WebbyYash. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll(".project-card");
+
+function revealPortfolio(){
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+}
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(40px)";
+card.style.transition=".8s";
+
+});
+
+window.addEventListener("scroll",revealPortfolio);
+
+revealPortfolio();
+
+</script>
+
+</body>
+</html>

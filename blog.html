@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog | WebbyYash</title>
+
+<meta name="description" content="Latest Web Development Blogs, SEO Tips and Technology Updates by WebbyYash">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(12px);
+border-bottom:2px solid orange;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:orange;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+height:55vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+margin-top:70px;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85));
+}
+
+.hero h1{
+font-size:60px;
+color:orange;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+line-height:1.8;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+color:orange;
+margin-bottom:60px;
+}
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+gap:35px;
+}
+
+.blog-card{
+background:#151515;
+border:2px solid orange;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+}
+
+.blog-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px orange;
+}
+
+.blog-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.blog-content{
+padding:25px;
+}
+
+.blog-content h3{
+color:orange;
+margin-bottom:15px;
+}
+
+.blog-content p{
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:orange;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">WebbyYash</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="pricing.html">Pricing</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>WebbyYash Blog</h1>
+
+<p>
+
+Learn Web Development, SEO, UI/UX Design, JavaScript, AI and the latest technology trends.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">
+
+Latest Articles
+
+</h1>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+
+<img src="https://picsum.photos/600/400?random=31">
+
+<div class="blog-content">
+
+<h3>Top 10 Web Design Trends in 2026</h3>
+
+<p>
+
+Discover the latest web design trends that every business website should follow.
+
+</p>
+
+<a href="#" class="btn">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<img src="https://picsum.photos/600/400?random=32">
+
+<div class="blog-content">
+
+<h3>Complete SEO Guide for Beginners</h3>
+
+<p>
+
+Learn how to rank your website higher on Google using simple SEO techniques.
+
+</p>
+
+<a href="#" class="btn">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<img src="https://picsum.photos/600/400?random=33">
+
+<div class="blog-content">
+
+<h3>Why Every Business Needs a Website</h3>
+
+<p>
+
+Understand how a professional website helps your business grow faster online.
+
+</p>
+
+<a href="#" class="btn">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h1 class="title">Blog Categories</h1>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>🌐 Web Development</h3>
+
+<p>
+Learn HTML, CSS, JavaScript, React, Node.js and modern website development techniques.
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>🚀 SEO Tips</h3>
+
+<p>
+Improve your Google rankings with practical SEO strategies and optimization techniques.
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>🎨 UI / UX Design</h3>
+
+<p>
+Create beautiful, user-friendly and responsive website interfaces for better user experience.
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>🤖 Artificial Intelligence</h3>
+
+<p>
+Explore AI tools, automation, prompt engineering and the future of intelligent web applications.
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>💼 Business Growth</h3>
+
+<p>
+Discover how websites, branding and digital marketing help businesses grow online.
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>🛡 Website Security</h3>
+
+<p>
+Learn how to secure your website using SSL, backups and security best practices.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Popular Articles</h1>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+
+<img src="https://picsum.photos/600/400?random=34">
+
+<div class="blog-content">
+
+<h3>How to Build a Business Website</h3>
+
+<p>
+A complete beginner's guide to planning, designing and launching a professional business website.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<img src="https://picsum.photos/600/400?random=35">
+
+<div class="blog-content">
+
+<h3>Best Free Tools for Developers</h3>
+
+<p>
+Explore the best free development tools for coding, testing, design and deployment.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<img src="https://picsum.photos/600/400?random=36">
+
+<div class="blog-content">
+
+<h3>Website Speed Optimization</h3>
+
+<p>
+Learn simple techniques to make your website load faster and improve user experience.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Blog Statistics</h1>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h2 style="font-size:55px;color:orange;">150+</h2>
+
+<p>Articles Published</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h2 style="font-size:55px;color:orange;">50K+</h2>
+
+<p>Monthly Readers</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h2 style="font-size:55px;color:orange;">100+</h2>
+
+<p>Helpful Tutorials</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h1 class="title">Subscribe To Our Newsletter</h1>
+
+<div class="blog-card" style="max-width:800px;margin:auto;text-align:center;padding:50px;">
+
+<h2 style="color:orange;">Stay Updated</h2>
+
+<p style="margin:25px 0;line-height:1.8;">
+
+Get the latest articles on Web Development, SEO, AI, UI/UX Design and technology directly in your inbox.
+
+</p>
+
+<form>
+
+<input type="email"
+placeholder="Enter Your Email"
+required
+style="width:100%;padding:15px;border:none;border-radius:10px;margin-bottom:20px;background:#222;color:white;">
+
+<button class="btn" type="submit">
+
+Subscribe Now
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">What Our Readers Say</h1>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>⭐⭐⭐⭐⭐ Rahul Kumar</h3>
+
+<p>
+
+"The tutorials are easy to understand and helped me build my first professional website."
+
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>⭐⭐⭐⭐⭐ Neha Sharma</h3>
+
+<p>
+
+"I learned SEO and website optimization through WebbyYash blogs. Excellent content."
+
+</p>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<h3>⭐⭐⭐⭐⭐ Aman Verma</h3>
+
+<p>
+
+"The AI and web development articles are informative and practical."
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="blog-card" style="text-align:center;padding:60px;">
+
+<h1 style="color:orange;font-size:42px;">
+
+Start Your Digital Journey Today
+
+</h1>
+
+<p style="margin:25px 0;font-size:18px;line-height:1.8;">
+
+Need a professional website for your business?
+Contact WebbyYash and let's build something amazing together.
+
+</p>
+
+<a href="contact.html" class="btn">
+
+Contact Us
+
+</a>
+
+</div>
+
+</section>
+
+<footer style="background:#111;border-top:2px solid orange;padding:60px 8%;">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+
+<div>
+
+<h2 style="color:orange;">WebbyYash</h2>
+
+<p style="margin-top:20px;line-height:1.8;">
+
+Professional Website Development, SEO, UI/UX Design and AI Solutions for modern businesses.
+
+</p>
+
+</div>
+
+<div>
+
+<h3 style="color:orange;">Quick Links</h3>
+
+<p><a href="index.html" style="color:white;text-decoration:none;">Home</a></p>
+<p><a href="about.html" style="color:white;text-decoration:none;">About</a></p>
+<p><a href="services.html" style="color:white;text-decoration:none;">Services</a></p>
+<p><a href="portfolio.html" style="color:white;text-decoration:none;">Portfolio</a></p>
+<p><a href="pricing.html" style="color:white;text-decoration:none;">Pricing</a></p>
+<p><a href="blog.html" style="color:white;text-decoration:none;">Blog</a></p>
+<p><a href="contact.html" style="color:white;text-decoration:none;">Contact</a></p>
+
+</div>
+
+<div>
+
+<h3 style="color:orange;">Contact</h3>
+
+<p>📞 +91 7428921765</p>
+<p>📧 webbyyash@gmail.com</p>
+<p>📍 Ghaziabad, Uttar Pradesh, India</p>
+
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border-color:#333;">
+
+<p style="text-align:center;">
+© 2026 WebbyYash. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("✅ Thank you for subscribing to the WebbyYash Newsletter!");
+
+this.reset();
+
+});
+
+const cards=document.querySelectorAll(".blog-card");
+
+function revealBlogs(){
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+}
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(40px)";
+card.style.transition=".8s";
+
+});
+
+window.addEventListener("scroll",revealBlogs);
+
+revealBlogs();
+
+</script>
+
+</body>
+</html>

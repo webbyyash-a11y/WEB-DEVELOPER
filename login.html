@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | WebbyYash</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#000,#1a1a1a);
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:absolute;
+width:400px;
+height:400px;
+background:orange;
+border-radius:50%;
+filter:blur(180px);
+top:-100px;
+left:-100px;
+opacity:.35;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:#ff7b00;
+border-radius:50%;
+filter:blur(180px);
+bottom:-100px;
+right:-100px;
+opacity:.35;
+}
+
+.login-box{
+position:relative;
+width:420px;
+padding:45px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:20px;
+box-shadow:0 0 25px rgba(0,0,0,.5);
+color:white;
+z-index:2;
+}
+
+.login-box h1{
+text-align:center;
+margin-bottom:30px;
+color:orange;
+font-size:40px;
+}
+
+.input-box{
+margin-bottom:22px;
+}
+
+.input-box label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+.input-box input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#222;
+color:white;
+font-size:16px;
+outline:none;
+}
+
+.options{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+font-size:14px;
+}
+
+.options a{
+color:orange;
+text-decoration:none;
+}
+
+.btn{
+width:100%;
+padding:15px;
+background:orange;
+color:black;
+font-weight:bold;
+font-size:18px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+.signup{
+margin-top:20px;
+text-align:center;
+}
+
+.signup a{
+color:orange;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Login</h1>
+
+<form>
+
+<div class="input-box">
+
+<label>Email</label>
+
+<input type="email" placeholder="Enter your email" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Password</label>
+
+<input id="password" type="password" placeholder="Enter your password" required>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox">
+
+Remember Me
+
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button class="btn" type="submit">
+
+Login
+
+</button>
+
+<div class="signup">
+
+Don't have an account?
+
+<a href="signup.html">
+
+Sign Up
+
+</a>
+
+</div>
+
+<hr style="margin:30px 0;border:1px solid rgba(255,255,255,.2);">
+
+<p style="text-align:center;margin-bottom:20px;color:#ccc;">
+Or Login With
+</p>
+
+<div style="display:flex;gap:15px;justify-content:center;flex-wrap:wrap;">
+
+<button type="button"
+style="padding:12px 20px;border:none;border-radius:10px;background:#db4437;color:white;font-weight:bold;cursor:pointer;">
+Google
+</button>
+
+<button type="button"
+style="padding:12px 20px;border:none;border-radius:10px;background:#1877F2;color:white;font-weight:bold;cursor:pointer;">
+Facebook
+</button>
+
+<button type="button"
+style="padding:12px 20px;border:none;border-radius:10px;background:#333;color:white;font-weight:bold;cursor:pointer;">
+GitHub
+</button>
+
+</div>
+
+<div style="margin-top:30px;background:rgba(255,255,255,.08);padding:18px;border-radius:12px;">
+
+<h3 style="color:orange;margin-bottom:10px;">
+🔒 Secure Login
+</h3>
+
+<p style="font-size:14px;line-height:1.7;color:#ddd;">
+
+Your information is encrypted and protected. Never share your password with anyone.
+
+</p>
+
+</div>
+
+<div style="margin-top:25px;text-align:center;">
+
+<button type="button"
+onclick="togglePassword()"
+style="padding:12px 25px;background:#222;color:white;border:1px solid orange;border-radius:30px;cursor:pointer;">
+
+👁 Show / Hide Password
+
+</button>
+
+</div>
+</form>
+
+</div>
+
+<script>
+
+function togglePassword(){
+
+const password=document.getElementById("password");
+
+if(password.type==="password"){
+
+password.type="text";
+
+}else{
+
+password.type="password";
+
+}
+
+}
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const email=document.querySelector('input[type="email"]').value.trim();
+
+const password=document.getElementById("password").value.trim();
+
+if(email==="" || password===""){
+
+alert("❌ Please fill in all required fields.");
+
+return;
+
+}
+
+if(password.length<6){
+
+alert("❌ Password must be at least 6 characters long.");
+
+return;
+
+}
+
+alert("✅ Login Successful!\n\nWelcome to WebbyYash.");
+
+this.reset();
+
+});
+
+const loginBox=document.querySelector(".login-box");
+
+loginBox.style.opacity="0";
+loginBox.style.transform="translateY(40px)";
+loginBox.style.transition="0.8s";
+
+window.onload=function(){
+
+loginBox.style.opacity="1";
+loginBox.style.transform="translateY(0)";
+
+};
+
+</script>
+
+</body>
+
+</html>

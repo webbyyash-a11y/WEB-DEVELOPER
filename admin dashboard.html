@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | WebbyYash</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+display:flex;
+}
+
+.sidebar{
+width:260px;
+height:100vh;
+background:#111;
+border-right:2px solid orange;
+padding:25px;
+position:fixed;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:orange;
+text-align:center;
+margin-bottom:40px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:orange;
+color:black;
+}
+
+.main{
+margin-left:260px;
+padding:35px;
+width:100%;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:35px;
+}
+
+.header h1{
+color:orange;
+}
+
+.profile{
+background:#222;
+padding:12px 20px;
+border-radius:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:35px;
+}
+
+.card{
+background:#151515;
+border:2px solid orange;
+border-radius:15px;
+padding:25px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px orange;
+}
+
+.card h2{
+font-size:42px;
+color:orange;
+margin-bottom:10px;
+}
+
+.table{
+background:#151515;
+border:2px solid orange;
+border-radius:15px;
+padding:25px;
+overflow:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:15px;
+border-bottom:1px solid #333;
+text-align:left;
+}
+
+th{
+color:orange;
+}
+
+@media(max-width:900px){
+
+.sidebar{
+display:none;
+}
+
+.main{
+margin-left:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">WebbyYash</div>
+
+<a href="#">🏠 Dashboard</a>
+
+<a href="#">👥 Users</a>
+
+<a href="#">📁 Projects</a>
+
+<a href="#">💬 Messages</a>
+
+<a href="#">📄 Blog</a>
+
+<a href="#">⚙ Settings</a>
+
+<a href="#">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<h1>Admin Dashboard</h1>
+
+<div class="profile">
+
+Administrator
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>250+</h2>
+
+<p>Total Clients</p>
+
+</div>
+
+<div class="card">
+
+<h2>120</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div class="card">
+
+<h2>85</h2>
+
+<p>Messages</p>
+
+</div>
+
+<div class="card">
+
+<h2>₹5.4L</h2>
+
+<p>Total Revenue</p>
+
+</div>
+
+</div>
+
+<div class="table">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Recent Projects
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Client</th>
+
+<th>Project</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>Business Website</td>
+
+<td>Completed</td>
+
+</tr>
+
+<tr>
+
+<td>Neha</td>
+
+<td>E-Commerce Store</td>
+
+<td>In Progress</td>
+
+</tr>
+
+<tr>
+
+<td>Amit</td>
+
+<td>Portfolio Website</td>
+
+<td>Pending</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<section style="margin-top:40px;">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Sales Analytics
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>78%</h2>
+
+<p>Monthly Growth</p>
+
+</div>
+
+<div class="card">
+
+<h2>95%</h2>
+
+<p>Customer Satisfaction</p>
+
+</div>
+
+<div class="card">
+
+<h2>32</h2>
+
+<p>New Orders</p>
+
+</div>
+
+<div class="card">
+
+<h2>18</h2>
+
+<p>Pending Tasks</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="margin-top:40px;">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Project Progress
+
+</h2>
+
+<div class="table">
+
+<p>Business Website</p>
+
+<div style="width:100%;height:12px;background:#333;border-radius:20px;margin-bottom:20px;">
+
+<div style="width:90%;height:12px;background:orange;border-radius:20px;"></div>
+
+</div>
+
+<p>E-Commerce Website</p>
+
+<div style="width:100%;height:12px;background:#333;border-radius:20px;margin-bottom:20px;">
+
+<div style="width:70%;height:12px;background:orange;border-radius:20px;"></div>
+
+</div>
+
+<p>Portfolio Website</p>
+
+<div style="width:100%;height:12px;background:#333;border-radius:20px;">
+
+<div style="width:45%;height:12px;background:orange;border-radius:20px;"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="margin-top:40px;">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Team Members
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>👨‍💻</h2>
+
+<p><strong>Yash</strong></p>
+
+<p>Founder & Developer</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎨</h2>
+
+<p><strong>Designer</strong></p>
+
+<p>UI / UX Designer</p>
+
+</div>
+
+<div class="card">
+
+<h2>📢</h2>
+
+<p><strong>Marketing</strong></p>
+
+<p>Digital Marketing</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="margin-top:40px;">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Recent Messages
+
+</h2>
+
+<div class="table">
+
+<table>
+
+<tr>
+
+<th>Name</th>
+<th>Subject</th>
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Rahul Sharma</td>
+<td>Business Website Inquiry</td>
+<td style="color:lightgreen;">New</td>
+
+</tr>
+
+<tr>
+
+<td>Priya Singh</td>
+<td>SEO Consultation</td>
+<td style="color:orange;">Pending</td>
+
+</tr>
+
+<tr>
+
+<td>Amit Verma</td>
+<td>Portfolio Website</td>
+<td style="color:skyblue;">Replied</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section style="margin-top:40px;">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Notifications
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>🔔</h2>
+
+<p>3 New Contact Requests</p>
+
+</div>
+
+<div class="card">
+
+<h2>💰</h2>
+
+<p>Payment Received</p>
+
+</div>
+
+<div class="card">
+
+<h2>🚀</h2>
+
+<p>Website Successfully Deployed</p>
+
+</div>
+
+<div class="card">
+
+<h2>📢</h2>
+
+<p>New Blog Published</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="margin-top:40px;">
+
+<h2 style="color:orange;margin-bottom:20px;">
+
+Recent Activity
+
+</h2>
+
+<div class="table">
+
+<ul style="line-height:2.2;padding-left:20px;">
+
+<li>✅ New client registered.</li>
+
+<li>✅ Business website delivered.</li>
+
+<li>📨 Contact form submission received.</li>
+
+<li>💳 Payment confirmed.</li>
+
+<li>📝 Blog article updated.</li>
+
+<li>📈 Monthly analytics generated.</li>
+
+</ul>
+
+</div>
+
+</section>
+<footer style="margin-top:50px;padding:25px;text-align:center;border-top:2px solid orange;color:#aaa;">
+
+<p>© 2026 WebbyYash Admin Dashboard. All Rights Reserved.</p>
+
+</footer>
+
+</div>
+
+<script>
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(40px)";
+card.style.transition="0.8s";
+
+});
+
+function revealCards(){
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+}
+
+window.addEventListener("scroll",revealCards);
+
+revealCards();
+
+const numbers=document.querySelectorAll(".card h2");
+
+numbers.forEach(number=>{
+
+const text=number.innerText;
+
+if(text.includes("%") || text.includes("₹") || text.includes("+")) return;
+
+const target=parseInt(text);
+
+if(isNaN(target)) return;
+
+let count=0;
+
+const speed=Math.max(1,Math.floor(target/50));
+
+const timer=setInterval(()=>{
+
+count+=speed;
+
+if(count>=target){
+
+count=target;
+
+clearInterval(timer);
+
+}
+
+number.innerText=count;
+
+},20);
+
+});
+
+</script>
+
+</body>
+
+</html>

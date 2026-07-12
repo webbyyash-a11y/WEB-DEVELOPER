@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 - Page Not Found | WebbyYash</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+max-width:700px;
+padding:40px;
+}
+
+h1{
+font-size:160px;
+color:orange;
+text-shadow:0 0 25px orange;
+animation:glow 2s infinite alternate;
+}
+
+h2{
+font-size:42px;
+margin:20px 0;
+}
+
+p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:35px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:orange;
+color:black;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:.4s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.08);
+}
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 15px orange;
+}
+
+to{
+text-shadow:0 0 45px orange;
+}
+
+}
+
+.circle{
+position:absolute;
+border-radius:50%;
+background:rgba(255,165,0,.08);
+animation:float 8s linear infinite;
+}
+
+.circle:nth-child(1){
+width:220px;
+height:220px;
+left:5%;
+top:10%;
+}
+
+.circle:nth-child(2){
+width:160px;
+height:160px;
+right:10%;
+bottom:15%;
+}
+
+.circle:nth-child(3){
+width:120px;
+height:120px;
+left:70%;
+top:20%;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-40px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+
+<h1>404</h1>
+
+<h2>Oops! Page Not Found</h2>
+
+<p>
+
+The page you are looking for doesn't exist or may have been moved.
+
+</p>
+
+<a href="index.html" class="btn">
+
+🏠 Back To Home
+
+</a>
+
+</div>
+
+</body>
+</html>

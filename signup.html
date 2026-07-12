@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sign Up | WebbyYash</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#000,#1a1a1a);
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:absolute;
+width:420px;
+height:420px;
+background:orange;
+border-radius:50%;
+filter:blur(180px);
+top:-120px;
+left:-120px;
+opacity:.35;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:#ff7b00;
+border-radius:50%;
+filter:blur(180px);
+bottom:-120px;
+right:-120px;
+opacity:.35;
+}
+
+.signup-box{
+position:relative;
+width:450px;
+padding:45px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:20px;
+box-shadow:0 0 30px rgba(0,0,0,.5);
+color:white;
+z-index:2;
+}
+
+.signup-box h1{
+text-align:center;
+color:orange;
+margin-bottom:30px;
+font-size:40px;
+}
+
+.input-box{
+margin-bottom:18px;
+}
+
+.input-box label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+.input-box input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#222;
+color:white;
+font-size:16px;
+outline:none;
+}
+
+.btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:50px;
+background:orange;
+color:black;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+.login{
+margin-top:20px;
+text-align:center;
+}
+
+.login a{
+color:orange;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="signup-box">
+
+<h1>Create Account</h1>
+
+<form>
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input type="text" placeholder="Enter your full name" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Email Address</label>
+
+<input type="email" placeholder="Enter your email" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Phone Number</label>
+
+<input type="tel" placeholder="Enter your phone number" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Password</label>
+
+<input id="password" type="password" placeholder="Create password" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Confirm Password</label>
+
+<input id="confirmPassword" type="password" placeholder="Confirm password" required>
+
+</div>
+
+<button class="btn" type="submit">
+
+Create Account
+
+</button>
+
+<div class="login">
+
+Already have an account?
+
+<a href="login.html">Login</a>
+
+</div>
+
+<div style="margin:20px 0;">
+
+<label style="display:flex;align-items:center;gap:10px;font-size:14px;">
+
+<input type="checkbox" required>
+
+I agree to the
+<a href="terms-and-conditions.html"
+style="color:orange;text-decoration:none;">
+Terms & Conditions
+</a>
+and
+<a href="privacy-policy.html"
+style="color:orange;text-decoration:none;">
+Privacy Policy
+</a>
+
+</label>
+
+</div>
+
+<div style="text-align:center;margin:25px 0;">
+
+<button
+type="button"
+onclick="togglePassword()"
+style="
+padding:12px 24px;
+background:#222;
+color:white;
+border:1px solid orange;
+border-radius:30px;
+cursor:pointer;
+">
+
+👁 Show / Hide Password
+
+</button>
+
+</div>
+
+<hr style="margin:30px 0;border:1px solid rgba(255,255,255,.2);">
+
+<p style="text-align:center;color:#ccc;margin-bottom:20px;">
+
+Or Sign Up With
+
+</p>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+
+<button
+type="button"
+style="padding:12px 20px;background:#DB4437;color:white;border:none;border-radius:10px;font-weight:bold;cursor:pointer;">
+
+Google
+
+</button>
+
+<button
+type="button"
+style="padding:12px 20px;background:#1877F2;color:white;border:none;border-radius:10px;font-weight:bold;cursor:pointer;">
+
+Facebook
+
+</button>
+
+<button
+type="button"
+style="padding:12px 20px;background:#333;color:white;border:none;border-radius:10px;font-weight:bold;cursor:pointer;">
+
+GitHub
+
+</button>
+
+</div>
+
+<div style="
+margin-top:30px;
+background:rgba(255,255,255,.08);
+padding:18px;
+border-radius:12px;
+">
+
+<h3 style="color:orange;margin-bottom:10px;">
+
+🔒 Secure Registration
+
+</h3>
+
+<p style="font-size:14px;line-height:1.7;color:#ddd;">
+
+Your personal information is protected using modern security practices. We never share your data without your permission.
+
+</p>
+
+</div>
+</form>
+
+</div>
+
+<script>
+
+function togglePassword(){
+
+const password=document.getElementById("password");
+const confirm=document.getElementById("confirmPassword");
+
+if(password.type==="password"){
+
+password.type="text";
+confirm.type="text";
+
+}else{
+
+password.type="password";
+confirm.type="password";
+
+}
+
+}
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name=document.querySelector('input[type="text"]').value.trim();
+const email=document.querySelector('input[type="email"]').value.trim();
+const phone=document.querySelector('input[type="tel"]').value.trim();
+const password=document.getElementById("password").value;
+const confirm=document.getElementById("confirmPassword").value;
+
+if(name==="" || email==="" || phone===""){
+
+alert("❌ Please fill in all required fields.");
+return;
+
+}
+
+if(password.length<6){
+
+alert("❌ Password must be at least 6 characters long.");
+return;
+
+}
+
+if(password!==confirm){
+
+alert("❌ Passwords do not match.");
+return;
+
+}
+
+alert("✅ Account Created Successfully!\n\nWelcome to WebbyYash.");
+
+this.reset();
+
+});
+
+const signupBox=document.querySelector(".signup-box");
+
+signupBox.style.opacity="0";
+signupBox.style.transform="translateY(40px)";
+signupBox.style.transition="0.8s";
+
+window.onload=function(){
+
+signupBox.style.opacity="1";
+signupBox.style.transform="translateY(0)";
+
+};
+
+</script>
+
+</body>
+</html>

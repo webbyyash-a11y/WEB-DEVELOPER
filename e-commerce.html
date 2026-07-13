@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WebbyYash | E-Commerce Website</title>
+
+<meta name="description" content="Professional E-Commerce Website by WebbyYash">
+<meta name="keywords" content="E-Commerce, Online Store, Shopping Website, WebbyYash">
+<meta name="author" content="WebbyYash">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#090909;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 0 20px orange;
+}
+
+.logo{
+font-size:34px;
+font-weight:bold;
+color:orange;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:28px;
+font-size:18px;
+transition:.4s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+padding:140px 8% 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:50px;
+}
+
+.hero-text{
+flex:1;
+min-width:320px;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:75px;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:orange;
+}
+
+.hero-text p{
+font-size:20px;
+color:#ddd;
+line-height:34px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 45px;
+background:orange;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px orange;
+}
+
+.hero-image{
+flex:1;
+min-width:320px;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:520px;
+border-radius:20px;
+box-shadow:0 0 30px orange;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:60px;
+color:orange;
+}
+
+.search-box{
+width:100%;
+max-width:600px;
+margin:0 auto 60px;
+}
+
+.search-box input{
+width:100%;
+padding:18px;
+border:none;
+border-radius:50px;
+background:#181818;
+color:white;
+font-size:18px;
+outline:none;
+border:2px solid orange;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.category{
+background:#181818;
+padding:35px;
+border-radius:20px;
+text-align:center;
+border:2px solid orange;
+transition:.4s;
+cursor:pointer;
+}
+
+.category:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px orange;
+}
+
+.category h2{
+margin-top:15px;
+color:orange;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.product{
+background:#181818;
+border-radius:20px;
+overflow:hidden;
+border:2px solid orange;
+transition:.4s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px orange;
+}
+
+.product img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-info{
+padding:25px;
+}
+
+.product-info h3{
+margin-bottom:12px;
+color:orange;
+}
+
+.price{
+font-size:24px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.buy-btn{
+width:100%;
+padding:15px;
+background:orange;
+border:none;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+border-radius:10px;
+transition:.4s;
+}
+
+.buy-btn:hover{
+box-shadow:0 0 20px orange;
+}
+
+.cart{
+position:fixed;
+right:20px;
+bottom:20px;
+background:orange;
+color:black;
+padding:18px 24px;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 20px orange;
+z-index:999;
+}
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero-text h1{
+font-size:40px;
+line-height:55px;
+}
+
+.title{
+font-size:34px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body><header>
+
+<div class="logo">WebbyYash</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>
+Premium
+<span>Online Store</span>
+For Every Business
+</h1>
+
+<p>
+Launch your online business with a modern,
+fast and mobile-friendly e-commerce website.
+Sell products easily with a beautiful shopping experience.
+</p>
+
+<a href="#products" class="btn">
+Shop Now
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200"
+alt="Ecommerce">
+
+</div>
+
+</section>
+
+<section id="categories">
+
+<h2 class="title">Shop By Category</h2>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search Products...">
+
+</div>
+
+<div class="categories">
+
+<div class="category">
+<h1>💻</h1>
+<h2>Electronics</h2>
+</div>
+
+<div class="category">
+<h1>👕</h1>
+<h2>Fashion</h2>
+</div>
+
+<div class="category">
+<h1>⌚</h1>
+<h2>Watches</h2>
+</div>
+
+<div class="category">
+<h1>👟</h1>
+<h2>Shoes</h2>
+</div>
+
+<div class="category">
+<h1>🪑</h1>
+<h2>Furniture</h2>
+</div>
+
+<div class="category">
+<h1>💄</h1>
+<h2>Beauty</h2>
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="title">
+Featured Products
+</h2>
+
+<div class="products">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200">
+
+<div class="product-info">
+
+<h3>Premium Smartphone</h3>
+
+<p>
+Latest generation smartphone with premium camera.
+</p>
+
+<div class="price">
+₹39,999
+</div>
+
+<button class="buy-btn">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200">
+
+<div class="product-info">
+
+<h3>Running Shoes</h3>
+
+<p>
+Comfortable sports shoes for daily use.
+</p>
+
+<div class="price">
+₹2,499
+</div>
+
+<button class="buy-btn">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200">
+
+<div class="product-info">
+
+<h3>Luxury Watch</h3>
+
+<p>
+Stylish premium watch with modern design.
+</p>
+
+<div class="price">
+₹5,999
+</div>
+
+<button class="buy-btn">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200">
+
+<div class="product-info">
+
+<h3>Casual T-Shirt</h3>
+
+<p>
+100% cotton premium quality T-shirt.
+</p>
+
+<div class="price">
+₹799
+</div>
+
+<button class="buy-btn">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cart">
+🛒 Cart (<span id="count">0</span>)
+</div>
+<section id="featured">
+
+<h2 class="title">Trending Products</h2>
+
+<div class="products">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200">
+
+<div class="product-info">
+
+<h3>Wireless Headphones</h3>
+
+<p>Crystal clear sound with noise cancellation.</p>
+
+<div class="price">₹3,499</div>
+
+<button class="buy-btn" onclick="addCart('Wireless Headphones',3499)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1200">
+
+<div class="product-info">
+
+<h3>Women's Jacket</h3>
+
+<p>Premium winter fashion collection.</p>
+
+<div class="price">₹2,999</div>
+
+<button class="buy-btn" onclick="addCart('Women Jacket',2999)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=1200">
+
+<div class="product-info">
+
+<h3>Gaming Mouse</h3>
+
+<p>RGB gaming mouse with high precision.</p>
+
+<div class="price">₹1,299</div>
+
+<button class="buy-btn" onclick="addCart('Gaming Mouse',1299)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=1200">
+
+<div class="product-info">
+
+<h3>Laptop Backpack</h3>
+
+<p>Waterproof stylish backpack.</p>
+
+<div class="price">₹1,799</div>
+
+<button class="buy-btn" onclick="addCart('Laptop Backpack',1799)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Shopping Cart</h2>
+
+<div style="background:#181818;padding:30px;border-radius:20px;border:2px solid orange;">
+
+<div id="cartItems">
+
+<p style="color:#ccc;">
+No products added yet.
+</p>
+
+</div>
+
+<h2 style="margin-top:30px;color:orange;">
+Total :
+₹ <span id="total">0</span>
+</h2>
+
+</div>
+
+</section>
+
+<script>
+
+let cart=0;
+
+let total=0;
+
+function addCart(product,price){
+
+cart++;
+
+total+=price;
+
+document.getElementById("count").innerHTML=cart;
+
+document.getElementById("total").innerHTML=total.toLocaleString();
+
+let item=document.createElement("p");
+
+item.style.padding="10px";
+
+item.style.borderBottom="1px solid #333";
+
+item.innerHTML=
+
+"✅ "+product+
+
+" - ₹"+price.toLocaleString();
+
+document.getElementById("cartItems").appendChild(item);
+
+}
+
+</script>
+<section id="reviews">
+
+<h2 class="title">Customer Reviews</h2>
+
+<div class="categories">
+
+<div class="category">
+<h2>⭐⭐⭐⭐⭐</h2>
+<p>"Amazing products and very fast delivery. Highly recommended!"</p>
+<h3 style="margin-top:20px;color:orange;">Rahul Sharma</h3>
+</div>
+
+<div class="category">
+<h2>⭐⭐⭐⭐⭐</h2>
+<p>"Beautiful website design and excellent customer support."</p>
+<h3 style="margin-top:20px;color:orange;">Priya Verma</h3>
+</div>
+
+<div class="category">
+<h2>⭐⭐⭐⭐⭐</h2>
+<p>"Best online shopping experience. Easy checkout process."</p>
+<h3 style="margin-top:20px;color:orange;">Aman Gupta</h3>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Frequently Asked Questions</h2>
+
+<div class="category">
+
+<h2>Do you provide Cash on Delivery?</h2>
+
+<p style="margin-top:15px;">
+Yes, Cash on Delivery is available in selected locations.
+</p>
+
+<br>
+
+<h2>How long does delivery take?</h2>
+
+<p style="margin-top:15px;">
+Normally 2–7 working days depending on your location.
+</p>
+
+<br>
+
+<h2>Can I return my product?</h2>
+
+<p style="margin-top:15px;">
+Yes, products can be returned within 7 days according to our return policy.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+
+
+<form action="https://formsubmit.co/webbyyash@gmail.com" method="POST">
+     
+<input
+type="text"
+name="Name"
+placeholder="Your Name"
+required>
+
+<br><br>
+
+<input
+type="email"
+name="Email"
+placeholder="Your Email"
+required>
+
+<br><br>
+
+<button
+class="buy-btn"
+type="submit">
+Send Message
+</button>
+
+
+  <input type="hidden" name="_next" value="https://webbyyash-a11y.github.io/WEB-DEVELOPER/thankyou.html">
+</form>
+
+</section>
+
+<footer
+style="background:#111;padding:40px;text-align:center;margin-top:60px;">
+
+<h2 style="color:orange;">
+WebbyYash
+</h2>
+
+<p style="margin-top:20px;">
+📞 +91 7428921765
+</p>
+
+<p>
+📧 webbyyash@gmail.com
+</p>
+
+<p style="margin-top:20px;color:#aaa;">
+© 2026 WebbyYash. All Rights Reserved.
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/917428921765"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:18px 22px;
+border-radius:50%;
+text-decoration:none;
+font-size:28px;
+box-shadow:0 0 20px #25D366;
+z-index:999;
+">
+
+💬
+
+</a>
+
+</body>
+
+</html>

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | WebbyYash</title>
+
+<meta name="description" content="Professional Portfolio Website by WebbyYash">
+<meta name="keywords" content="Portfolio, Web Developer, Designer, Freelancer">
+<meta name="author" content="WebbyYash">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 0 20px orange;
+z-index:1000;
+}
+
+.logo{
+font-size:34px;
+font-weight:bold;
+color:orange;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:30px;
+font-size:18px;
+transition:.4s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+min-height:100vh;
+padding:140px 8% 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:60px;
+}
+
+.hero-text{
+flex:1;
+min-width:320px;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:75px;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:orange;
+}
+
+.hero-text p{
+font-size:20px;
+line-height:34px;
+color:#ddd;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:orange;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px orange;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+min-width:320px;
+}
+
+.hero-image img{
+width:100%;
+max-width:420px;
+border-radius:50%;
+border:5px solid orange;
+box-shadow:0 0 40px orange;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:44px;
+margin-bottom:60px;
+color:orange;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 30px orange;
+}
+
+.about-text p{
+line-height:34px;
+font-size:18px;
+color:#ddd;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.skill{
+background:#181818;
+padding:25px;
+border-radius:15px;
+border:2px solid orange;
+}
+
+.skill h3{
+margin-bottom:15px;
+}
+
+.bar{
+height:10px;
+background:#333;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:orange;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.project{
+background:#181818;
+border-radius:20px;
+overflow:hidden;
+border:2px solid orange;
+transition:.4s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px orange;
+}
+
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.project-info{
+padding:20px;
+}
+
+.project-info h3{
+color:orange;
+margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero-text h1{
+font-size:42px;
+line-height:55px;
+}
+
+.title{
+font-size:34px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <header>
+
+<div class="logo">WebbyYash</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>
+
+Hi,
+I'm
+
+<span>Web Developer</span>
+
+</h1>
+
+<p>
+
+I create beautiful, modern and responsive websites
+for businesses, startups and personal brands.
+My goal is to build fast, secure and attractive
+websites that help clients grow online.
+
+</p>
+
+<a href="#projects" class="btn">
+
+View Projects
+
+</a>
+
+<a href="#contact" class="btn" style="margin-left:15px;">
+
+Hire Me
+
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">
+
+About Me
+
+</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900">
+
+<div class="about-text">
+
+<p>
+
+Hello!
+
+I'm a professional Website Designer &
+Front-End Developer.
+
+I specialize in creating responsive websites,
+business websites, e-commerce stores,
+landing pages and portfolio websites.
+
+</p>
+
+<br>
+
+<p>
+
+✔ Responsive Design
+
+<br><br>
+
+✔ SEO Friendly Website
+
+<br><br>
+
+✔ Fast Loading
+
+<br><br>
+
+✔ Mobile Friendly
+
+<br><br>
+
+✔ Premium UI Design
+
+<br><br>
+
+✔ Lifetime Support
+
+</p>
+
+<br>
+
+<a href="#" class="btn">
+
+Download CV
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">
+
+My Skills
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<h3>HTML</h3>
+
+<div class="bar">
+
+<div class="fill"
+
+style="width:98%;">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<h3>CSS</h3>
+
+<div class="bar">
+
+<div class="fill"
+
+style="width:95%;">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<h3>JavaScript</h3>
+
+<div class="bar">
+
+<div class="fill"
+
+style="width:90%;">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<h3>Responsive Design</h3>
+
+<div class="bar">
+
+<div class="fill"
+
+style="width:97%;">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<h3>UI / UX Design</h3>
+
+<div class="bar">
+
+<div class="fill"
+
+style="width:92%;">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<h3>SEO Optimization</h3>
+
+<div class="bar">
+
+<div class="fill"
+
+style="width:88%;">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="projects">
+
+<h2 class="title">
+
+Latest Projects
+
+</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900">
+
+<div class="project-info">
+
+<h3>Business Website</h3>
+
+<p>
+
+Professional responsive website for a company with premium UI.
+
+</p>
+
+<br>
+
+<a href="#" class="btn">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900">
+
+<div class="project-info">
+
+<h3>E-Commerce Store</h3>
+
+<p>
+
+Modern online shopping website with shopping cart.
+
+</p>
+
+<br>
+
+<a href="#" class="btn">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900">
+
+<div class="project-info">
+
+<h3>Portfolio Website</h3>
+
+<p>
+
+Personal portfolio website with premium animations.
+
+</p>
+
+<br>
+
+<a href="#" class="btn">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900">
+
+<div class="project-info">
+
+<h3>Landing Page</h3>
+
+<p>
+
+High-converting landing page for marketing campaigns.
+
+</p>
+
+<br>
+
+<a href="#" class="btn">
+
+View Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">
+
+My Services
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<h3>🌐 Website Development</h3>
+
+<p>
+
+Professional Business, Company and Corporate websites.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>🛒 E-Commerce Store</h3>
+
+<p>
+
+Complete online shopping websites with modern UI.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>🎨 UI / UX Design</h3>
+
+<p>
+
+Modern user interface with attractive layouts.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>📱 Responsive Design</h3>
+
+<p>
+
+Perfect display on Mobile, Tablet and Desktop.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>🚀 SEO Optimization</h3>
+
+<p>
+
+Google-friendly websites for better ranking.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>🔧 Website Maintenance</h3>
+
+<p>
+
+Website updates, fixes and ongoing support.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">
+
+Experience
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<h3>2024 - Present</h3>
+
+<p>
+
+Freelance Web Developer creating modern websites for clients.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>Business Websites</h3>
+
+<p>
+
+Designed responsive websites for startups and companies.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>E-Commerce</h3>
+
+<p>
+
+Built attractive online shopping websites with modern layouts.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>Portfolio Projects</h3>
+
+<p>
+
+Created premium portfolio websites for professionals and students.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="testimonials">
+
+<h2 class="title">Client Testimonials</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>⭐⭐⭐⭐⭐ Rahul Sharma</h3>
+<p>
+Excellent website design with modern UI.
+Highly recommended for professional websites.
+</p>
+</div>
+
+<div class="skill">
+<h3>⭐⭐⭐⭐⭐ Priya Gupta</h3>
+<p>
+Very professional work and delivered before deadline.
+Amazing experience.
+</p>
+</div>
+
+<div class="skill">
+<h3>⭐⭐⭐⭐⭐ Aman Verma</h3>
+<p>
+Beautiful responsive website with premium animations.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<form action="https://formsubmit.co/webbyyash@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_template" value="table">
+
+<input type="hidden" name="_subject" value="New Portfolio Website Inquiry">
+
+<input type="hidden" name="_next"
+value="https://webbyyash-a11y.github.io/WEB-DEVELOPER/thankyou.html">
+
+<input
+type="text"
+name="Name"
+placeholder="Your Name"
+required
+style="width:100%;padding:15px;margin-bottom:20px;background:#181818;color:white;border:2px solid orange;border-radius:10px;">
+
+<input
+type="email"
+name="Email"
+placeholder="Your Email"
+required
+style="width:100%;padding:15px;margin-bottom:20px;background:#181818;color:white;border:2px solid orange;border-radius:10px;">
+
+<input
+type="tel"
+name="Phone"
+placeholder="Phone Number"
+required
+style="width:100%;padding:15px;margin-bottom:20px;background:#181818;color:white;border:2px solid orange;border-radius:10px;">
+
+<textarea
+name="Message"
+placeholder="Write Your Message"
+required
+style="width:100%;height:180px;padding:15px;background:#181818;color:white;border:2px solid orange;border-radius:10px;margin-bottom:20px;"></textarea>
+
+<button
+type="submit"
+class="btn"
+style="border:none;cursor:pointer;">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<footer style="background:#111;padding:50px;text-align:center;">
+
+<h2 style="color:orange;">
+WebbyYash
+</h2>
+
+<p style="margin-top:20px;">
+Professional Website Developer
+</p>
+
+<p style="margin-top:10px;">
+📞 +91 7428921765
+</p>
+
+<p>
+📧 webbyyash@gmail.com
+</p>
+
+<p style="margin-top:20px;color:#999;">
+© 2026 WebbyYash. All Rights Reserved.
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/917428921765"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:30px;
+box-shadow:0 0 20px #25D366;
+z-index:999;">
+💬
+</a>
+
+<script>
+
+window.addEventListener("scroll",()=>{
+
+const cards=document.querySelectorAll(".project,.skill");
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-80){
+
+card.style.opacity="1";
+
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".project,.skill").forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(50px)";
+
+card.style.transition="0.8s";
+
+});
+
+</script>
+
+</body>
+
+</html>

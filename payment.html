@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebbyYash | Secure Payment</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+width:380px;
+background:#111827;
+border-radius:20px;
+padding:25px;
+text-align:center;
+box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ff9800;
+margin-bottom:10px;
+}
+
+h2{
+margin-bottom:5px;
+}
+
+p{
+color:#ccc;
+margin-bottom:15px;
+}
+
+img{
+width:250px;
+border-radius:15px;
+margin:15px 0;
+}
+
+.upi{
+background:#1f2937;
+padding:12px;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+margin:8px 0;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.copy{
+background:#ff9800;
+color:#fff;
+}
+
+.success{
+background:#16a34a;
+color:#fff;
+}
+
+.cancel{
+background:#dc2626;
+color:#fff;
+}
+
+.share{
+background:#2563eb;
+color:#fff;
+}
+
+.notice{
+background:#2d1b00;
+padding:12px;
+border-left:5px solid orange;
+margin:15px 0;
+border-radius:8px;
+color:#ffd27a;
+font-size:14px;
+}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#aaa;
+}
+
+.status{
+background:#1f2937;
+padding:12px;
+border-radius:10px;
+margin:15px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="logo">WebbyYash</div>
+
+<h2>Secure Payment</h2>
+
+<p>Scan QR Code using FamApp</p>
+
+<img src="fam-qr.jpg" alt="Fam QR">
+
+<div class="upi" id="upi">
+7428921765@fam
+</div>
+
+<button class="copy" onclick="copyUPI()">
+Copy UPI ID
+</button>
+
+<div class="notice">
+<b>Important:</b><br>
+30% Advance Payment is required before work starts.<br><br>
+Remaining 70% after project completion.
+</div>
+
+<div class="status">
+Payment Status :
+<b id="status">Pending</b>
+</div>
+
+<button class="success" onclick="successPayment()">
+Payment Successful
+</button>
+
+<button class="cancel" onclick="cancelPayment()">
+Cancel Payment
+</button>
+
+<button class="share" onclick="shareQR()">
+Share Payment Page
+</button>
+
+<div class="footer">
+© 2026 WebbyYash<br>
+Secure Payment via FamApp
+</div>
+
+</div>
+
+<script>
+
+function copyUPI(){
+navigator.clipboard.writeText("7428921765@fam");
+alert("UPI ID Copied!");
+}
+
+function successPayment(){
+document.getElementById("status").innerHTML="Successful ✅";
+alert("Thank you for your payment!");
+}
+
+function cancelPayment(){
+document.getElementById("status").innerHTML="Cancelled ❌";
+alert("Payment Cancelled.");
+}
+
+function shareQR(){
+
+if(navigator.share){
+
+navigator.share({
+title:"WebbyYash Payment",
+text:"Pay using my FamApp UPI",
+url:window.location.href
+});
+
+}else{
+
+alert("Sharing not supported on this device.");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

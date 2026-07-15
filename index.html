@@ -559,29 +559,628 @@ Our Services
 <a href="https://wa.me/917428921765"
 style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:16px 20px;border-radius:50%;text-decoration:none;font-size:24px;">💬</a>
 
+  <a href="https://wa.me/917428921765"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:16px 20px;border-radius:50%;text-decoration:none;font-size:24px;">💬</a>
+
+<!-- ================= DARK MODE BUTTON ================= -->
+
+<button id="themeBtn">🌙</button>
+
+<style>
+
+/* Loading Screen */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999999;
+transition:1s;
+}
+
+.loader-logo{
+font-size:55px;
+font-weight:bold;
+color:orange;
+animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+
+0%{transform:scale(1);}
+
+50%{transform:scale(1.15);}
+
+100%{transform:scale(1);}
+
+}
+
+/* Dark Light */
+
+.light-mode{
+
+background:#ffffff!important;
+
+color:#111!important;
+
+}
+
+.light-mode section{
+
+background:#fff!important;
+
+color:#111!important;
+
+}
+
+.light-mode .card{
+
+background:#f3f3f3!important;
+
+color:#111!important;
+
+}
+
+/* Theme Button */
+
+#themeBtn{
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:orange;
+
+font-size:24px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+z-index:9999;
+
+box-shadow:0 0 20px orange;
+
+transition:.4s;
+
+}
+
+#themeBtn:hover{
+
+transform:rotate(180deg);
+
+}
+
+/* Mouse Glow */
+
+.cursor{
+
+position:fixed;
+
+width:18px;
+
+height:18px;
+
+background:orange;
+
+border-radius:50%;
+
+pointer-events:none;
+
+box-shadow:0 0 25px orange;
+
+transform:translate(-50%,-50%);
+
+z-index:99999;
+
+}
+
+</style>
+
+<script>
+
+/* Loading */
+
+window.onload=function(){
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.opacity="0";
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},800);
+
+},1500);
+
+};
+
+/* Theme */
+
+let btn=document.getElementById("themeBtn");
+
+btn.onclick=function(){
+
+document.body.classList.toggle("light-mode");
+
+if(document.body.classList.contains("light-mode")){
+
+btn.innerHTML="☀";
+
+}else{
+
+btn.innerHTML="🌙";
+
+}
+
+};
+
+/* Custom Cursor */
+
+let cursor=document.createElement("div");
+
+cursor.className="cursor";
+
+document.body.appendChild(cursor);
+
+document.addEventListener("mousemove",e=>{
+
+cursor.style.left=e.clientX+"px";
+
+cursor.style.top=e.clientY+"px";
+
+});
+
+/* Navbar Shadow */
+
+window.addEventListener("scroll",()=>{
+
+let nav=document.querySelector("header");
+
+if(window.scrollY>60){
+
+nav.style.boxShadow="0 0 25px orange";
+
+}else{
+
+nav.style.boxShadow="none";
+
+}
+
+});
+
+/* Typing Hero */
+
+const hero=document.querySelector(".hero h1");
+
+const text="Professional Website Development";
+
+let i=0;
+
+hero.innerHTML="";
+
+function typing(){
+
+if(i<text.length){
+
+hero.innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,70);
+
+}
+
+}
+
+typing();
+
+</script>
+<!-- ================= LIVE CHAT BUTTON ================= -->
+
+<a href="https://wa.me/917428921765" id="chatBtn" target="_blank">
+💬
+</a>
+
+<!-- ================= NOTIFICATION ================= -->
+
+<div id="notify">
+
+🎉 Welcome to WebbyYash! Get your Professional Website Today.
+
+</div>
+
+<!-- ================= PARTICLES ================= -->
+
+<div id="particles"></div>
+
+<style>
+
+/* Chat Button */
+
+#chatBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:100px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+color:#fff;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:32px;
+
+text-decoration:none;
+
+box-shadow:0 0 25px #25D366;
+
+animation:bounce 1.5s infinite;
+
+z-index:9999;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/* Notification */
+
+#notify{
+
+position:fixed;
+
+top:25px;
+
+right:-420px;
+
+background:#111;
+
+color:#fff;
+
+padding:18px 25px;
+
+border-left:5px solid orange;
+
+border-radius:10px;
+
+transition:1s;
+
+z-index:99999;
+
+box-shadow:0 0 20px orange;
+
+}
+
+/* Particles */
+
+#particles{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-1;
+
+}
+
+.dot{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+background:orange;
+
+border-radius:50%;
+
+opacity:.4;
+
+animation:move 12s linear infinite;
+
+}
+
+@keyframes move{
+
+0%{
+
+transform:translateY(110vh);
+
+}
+
+100%{
+
+transform:translateY(-110vh);
+
+}
+
+}
+
+</style>
+
+<script>
+
+/* Notification */
+
+setTimeout(()=>{
+
+document.getElementById("notify").style.right="20px";
+
+},2000);
+
+setTimeout(()=>{
+
+document.getElementById("notify").style.right="-420px";
+
+},7000);
+
+/* Particles */
+
+let bg=document.getElementById("particles");
+
+for(let i=0;i<80;i++){
+
+let p=document.createElement("div");
+
+p.className="dot";
+
+p.style.left=Math.random()*100+"%";
+
+p.style.animationDuration=(6+Math.random()*8)+"s";
+
+p.style.animationDelay=Math.random()*5+"s";
+
+bg.appendChild(p);
+
+}
+
+</script>
+
+<!-- Back To Top -->
+<button id="topBtn">↑</button>
+
+<style>
+
+/* Glow Animation */
+@keyframes glow{
+0%{box-shadow:0 0 5px orange;}
+50%{box-shadow:0 0 30px orange;}
+100%{box-shadow:0 0 5px orange;}
+}
+
+.card:hover{
+animation:glow 1.5s infinite;
+}
+
+/* Hero Animation */
+.hero h1{
+animation:slideDown 1s ease;
+}
+
+.hero p{
+animation:fadeUp 1.5s ease;
+}
+
+@keyframes slideDown{
+from{
+opacity:0;
+transform:translateY(-50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Scroll Reveal */
+.reveal{
+opacity:0;
+transform:translateY(80px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Top Button */
+#topBtn{
+position:fixed;
+bottom:90px;
+right:20px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:orange;
+color:#000;
+font-size:22px;
+cursor:pointer;
+display:none;
+font-weight:bold;
+z-index:999;
+}
+
+footer{
+margin-top:60px;
+}
+
+</style>
+
+<script>
+
+// Scroll Reveal
+let reveal=document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+
+reveal.forEach(sec=>{
+
+let top=sec.getBoundingClientRect().top;
+
+if(top<window.innerHeight-120){
+sec.classList.add("active");
+}
+
+});
+
+});
+
+// Counter Animation
+let counters=document.querySelectorAll(".box h2");
+
+counters.forEach(counter=>{
+
+let target=parseInt(counter.innerText);
+
+let count=0;
+
+let update=()=>{
+
+count+=Math.ceil(target/80);
+
+if(count<target){
+
+counter.innerText=count+"+";
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerText=target+"+";
+
+}
+
+};
+
+update();
+
+});
+
+// Back To Top
+let topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+0
+topBtn.style.display="none";
+
+}
+
+};
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+// Smooth Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+// Welcome Message
+setTimeout(function(){
+
+alert("Welcome to WebbyYash 🚀");
+
+},800);
+
+</script>
+
+
+
 </body>
 </html>
-
-<!-- ================= GOOGLE MAP ================= -->
-
-<section>
-
-<h1 class="title">
-
-Our Location
-
-</h1>
-
-<iframe
-
-src="https://maps.google.com/maps?q=Ghaziabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
-
-width="100%"
-
-height="450"
-
-style="border:3px solid orange;border-radius:20px;">
-
-</iframe>
-
-</section>
